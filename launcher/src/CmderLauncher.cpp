@@ -367,7 +367,7 @@ void StartCmder(std::wstring  path = L"", bool is_single_mode = false, std::wstr
 		PathCombine(conEmuPath, exeDir, L"vendor\\conemu-maximus5\\ConEmu.exe");
 	}
 
-	swprintf_s(args, L"%s /Icon \"%s\" /Title Cmder", args, icoPath);
+	swprintf_s(args, L"%s /Icon \"%s\" ", args, icoPath);
 
 	if (!streqi(cmderStart.c_str(), L""))
 	{
